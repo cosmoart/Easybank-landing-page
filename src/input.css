@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.btn-primary {
+		@apply border-none cursor-pointer font-bold px-5 py-2 rounded from-LimeGreen to-BrightCyan;
+	}
+}
+
+:root {
+	--DarkBlue: hsl(233, 26%, 24%);
+	--LimeGreen: hsl(136, 65%, 51%);
+	--BrightCyan: hsl(192, 70%, 51%);
+
+	--GrayishBlue: hsl(233, 8%, 62%);
+	--LightGrayishBlue: hsl(220, 16%, 96%);
+	--VeryLightGray: hsl(0, 0%, 98%);
+	--White: hsl(0, 0%, 100%);
+}
+
+#homePage::before,
+#homePage::after {
+	content: "";
+	position: absolute;
+	z-index: -5;
+}
+
+#homePage::before {
+	background: url("assets/images/bg-intro-mobile.svg");
+	width: 100%;
+	height: 70%;
+	background-size: 100%;
+}
+
+#homePage::after {
+	background: url("assets/images/image-mockups.png");
+	width: 100%;
+	height: 70%;
+	background-size: 100%;
+}
+
+/* ============ FONTS ========= */
+@font-face {
+	font-family: 'Public Sans';
+	src: url("./assets/fonts/PublicSans-Light.ttf");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Public Sans';
+	src: url("./assets/fonts/PublicSans-Regular.ttf");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Public Sans';
+	src: url("./assets/fonts/PublicSans-Bold.ttf");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ============ SCROLL-BAR ========= */
+/* width */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--DarkBlue);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: var(--LimeGreen);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(146, 146, 146);
+}
