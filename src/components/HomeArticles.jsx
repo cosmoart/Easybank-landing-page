@@ -12,17 +12,17 @@ export default function HomeArticles() {
 	]
 
 	return (
-		<article className="scrollAnimation">
-			<h2 className="font-bold text-lg">Latest Articles</h2>
+		<article className="scrollAnimation p-6 mx-auto max-w-6xl mt-32 mb-16">
+			<h2 className="font-medium text-4xl mb-16">Latest Articles</h2>
 			<div className="flex flex-col sm:flex-row gap-4">
 				{
 					ARTICLES.map((art, i) =>
-						<figure key={i + 325} className="bg-white rounded-sm">
+						<figure key={i + 325} className="bg-white transition-transform rounded-lg overflow-hidden cursor-pointer hover:scale-105">
 							<img src={art[0]} alt="article" />
-							<div className="p-4">
+							<div className="px-4 py-6">
 								<p className="text-sm">{art[1]}</p>
 								<figcaption><h3>{art[2]}</h3></figcaption>
-								<p>{art[3]}</p>
+								<p className="text-sm">{art[3]}</p>
 							</div>
 						</figure>
 					)

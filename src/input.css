@@ -4,7 +4,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply border-none cursor-pointer font-bold px-5 py-2 rounded from-LimeGreen to-BrightCyan;
+		@apply border-none text-white cursor-pointer font-bold px-[34px] py-[13px] rounded-full bg-gradient-to-r from-LimeGreen to-BrightCyan text-sm;
 	}
 }
 
@@ -16,28 +16,69 @@
 	--GrayishBlue: hsl(233, 8%, 62%);
 	--LightGrayishBlue: hsl(220, 16%, 96%);
 	--VeryLightGray: hsl(0, 0%, 98%);
-	--White: hsl(0, 0%, 100%);
 }
 
-#homePage::before,
+#homePage>div::after,
 #homePage::after {
 	content: "";
 	position: absolute;
 	z-index: -5;
 }
 
-#homePage::before {
-	background: url("assets/images/bg-intro-mobile.svg");
+#homePage>div::after {
+	background: url("assets/images/bg-intro-mobile.svg") no-repeat;
 	width: 100%;
 	height: 70%;
 	background-size: 100%;
+	top: 0;
 }
 
 #homePage::after {
-	background: url("assets/images/image-mockups.png");
+	background: url("assets/images/image-mockups.png") no-repeat;
 	width: 100%;
 	height: 70%;
 	background-size: 100%;
+	top: 0;
+}
+
+.homeLinks li:last-child a {
+	position: relative;
+}
+
+.homeLinks li:last-child a::after {
+	content: "";
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	bottom: -1.5rem;
+	left: 0;
+	background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+	transition: left .3s ease-in-out;
+}
+
+.homeLinks li:hover~li:last-child a::after {
+	left: -100%;
+}
+
+@media (min-width: 640px) {
+
+	#homePage>div::after {
+		width: 50%;
+		height: 100%;
+		right: 0;
+	}
+
+	#homePage::after {
+		height: 90%;
+		width: 53%;
+		right: -8rem;
+		top: -2rem;
+		background-size: contain;
+	}
+
+	#homePage>div::after {
+		background: url("assets/images/bg-intro-desktop.svg");
+	}
 }
 
 /* ============ FONTS ========= */
@@ -65,18 +106,19 @@
 /* ============ SCROLL-BAR ========= */
 /* width */
 ::-webkit-scrollbar {
-	width: 12px;
+	width: 13px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: var(--DarkBlue);
+	background: var(--LightGrayishBlue);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background: var(--LimeGreen);
+	border: 3px solid var(--LightGrayishBlue);
+	background: linear-gradient(to bottom, var(--LimeGreen), var(--BrightCyan));
 }
 
 /* Handle on hover */

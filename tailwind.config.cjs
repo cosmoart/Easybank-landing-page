@@ -13,10 +13,12 @@ module.exports = {
 				"GrayishBlue": "#9698a6",
 				"LightGrayishBlue": "#f3f4f6",
 				"VeryLightGray": "#fafafa",
-				"White": "#ffffff",
 			},
 			fontFamily: {
 				"PublicSans": ["Public Sans", "sans-serif"],
+			},
+			fontSize: {
+				"title": "clamp(37px,6vw ,60px)"
 			}
 		},
 	},

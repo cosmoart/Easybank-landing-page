@@ -12,18 +12,20 @@ const SECTIONS = [
 
 export default function HomeSections() {
 	return (
-		<article>
-			<h2>Why choose Easybank?</h2>
-			<p>
+		<article className="py-14 px-6 my-14 mx-auto max-w-6xl">
+			<h2 className="text-4xl mb-6">Why choose Easybank?</h2>
+			<p className="mb-6 text-lg max-w-2xl">
 				We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
 			</p>
-			<div className="flex flex-col sm:flex-row text-center sm:text-left">
+			<div className="flex flex-col sm:flex-row text-center sm:text-left gap-3 mt-[54px]">
 				{
 					SECTIONS.map((sec, i) =>
-						<section key={i + 120}>
-							<img src={sec[0]} alt="" className="m-auto sm:m-0" />
-							<h3>{sec[1]}</h3>
-							<p>{sec[2]}</p>
+						<section key={i + 120} className="bg-white rounded-sm">
+							<img src={sec[0]} alt="" className="mx-auto sm:mb-6 sm:mx-0" />
+							<div className="p-4">
+								<h3>{sec[1]}</h3>
+								<p>{sec[2]}</p>
+							</div>
 						</section>
 					)
 				}
