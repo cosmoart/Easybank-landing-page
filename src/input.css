@@ -18,66 +18,72 @@
 	--VeryLightGray: hsl(0, 0%, 98%);
 }
 
-#homePage>div::after,
+#home-page-bg::after,
 #homePage::after {
 	content: "";
 	position: absolute;
 	z-index: -5;
+	width: 100%;
 }
 
-#homePage>div::after {
-	background: url("assets/images/bg-intro-mobile.svg") no-repeat;
-	width: 100%;
-	height: 70%;
-	background-size: 100%;
+#home-page-bg {
+	position: absolute;
+	width: 100vw;
+	height: 100%;
 	top: 0;
+	left: 0;
+}
+
+#home-page-bg::after {
+	background: url("assets/images/bg-intro-mobile.svg") no-repeat;
+	height: 70%;
+	top: -5rem;
+	background-size: cover;
 }
 
 #homePage::after {
 	background: url("assets/images/image-mockups.png") no-repeat;
+	height: 90%;
+	top: -11rem;
+	background-size: contain;
 	width: 100%;
-	height: 70%;
-	background-size: 100%;
-	top: 0;
+	max-width: 31rem;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.homeLinks li:last-child a {
-	position: relative;
-}
-
-.homeLinks li:last-child a::after {
-	content: "";
-	width: 100%;
+#nav__underline {
+	width: calc(100%/5);
 	height: 3px;
 	position: absolute;
-	bottom: -1.5rem;
+	bottom: -1rem;
 	left: 0;
 	background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
-	transition: left .3s ease-in-out;
+	transition: all .2s ease-in-out;
 }
 
-.homeLinks li:hover~li:last-child a::after {
-	left: -100%;
-}
 
 @media (min-width: 640px) {
 
-	#homePage>div::after {
-		width: 50%;
-		height: 100%;
-		right: 0;
-	}
-
-	#homePage::after {
-		height: 90%;
-		width: 53%;
-		right: -8rem;
-		top: -2rem;
+	#home-page-bg::after {
+		background: url("assets/images/bg-intro-desktop.svg") no-repeat;
+		width: 90%;
+		height: 73rem;
+		right: -30rem;
+		top: -16.4rem;
 		background-size: contain;
 	}
 
-	#homePage>div::after {
-		background: url("assets/images/bg-intro-desktop.svg");
+	#homePage::after {
+		height: 60rem;
+		width: 57%;
+		min-width: 24rem;
+		right: -11rem;
+		top: -8rem;
+		background-size: contain;
+		transform: none;
+		left: auto;
+		max-width: none;
 	}
 }
 
