@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export default function HomeHeader() {
 	const [menu, setMenu] = useState(false);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+	let timer;
 
 	useEffect(() => {
 		let underline = document.getElementById("nav__underline");
@@ -26,10 +27,11 @@ export default function HomeHeader() {
 			link.addEventListener("mouseover", () => {
 				underline.style.bottom = `-1rem`;
 				underline.style.left = `${(100 / 5) * i}%`;
+				clearTimeout(timer);
 			});
 
 			link.addEventListener("mouseout", () => {
-				setTimeout(() => underline.style.bottom = `-1.5rem`, 1200);
+				timer = setTimeout(() => underline.style.bottom = `-1.5rem`, 1200);
 			});
 		})
 

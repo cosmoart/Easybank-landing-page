@@ -4,7 +4,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply border-none text-white cursor-pointer font-bold px-[34px] py-[13px] rounded-full bg-gradient-to-r from-LimeGreen to-BrightCyan text-sm;
+		@apply z-10 cursor-pointer rounded-full border-none bg-gradient-to-r from-LimeGreen to-BrightCyan px-[34px] py-[13px] text-sm font-bold text-white transition-transform hover:scale-[1.03] active:scale-[0.98];
 	}
 }
 
@@ -53,18 +53,16 @@
 }
 
 #nav__underline {
-	width: calc(100%/5);
+	width: calc(100% / 5);
 	height: 3px;
 	position: absolute;
 	bottom: -1rem;
 	left: 0;
 	background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
-	transition: all .2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
-
 @media (min-width: 640px) {
-
 	#home-page-bg::after {
 		background: url("assets/images/bg-intro-desktop.svg") no-repeat;
 		width: 90%;
@@ -89,21 +87,21 @@
 
 /* ============ FONTS ========= */
 @font-face {
-	font-family: 'Public Sans';
+	font-family: "Public Sans";
 	src: url("./assets/fonts/PublicSans-Light.ttf");
 	font-weight: 300;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Public Sans';
+	font-family: "Public Sans";
 	src: url("./assets/fonts/PublicSans-Regular.ttf");
 	font-weight: 400;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: 'Public Sans';
+	font-family: "Public Sans";
 	src: url("./assets/fonts/PublicSans-Bold.ttf");
 	font-weight: 700;
 	font-display: swap;
