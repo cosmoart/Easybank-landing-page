@@ -22,6 +22,7 @@ function App() {
 			observer.observe(card)
 		});
 	}, []);
+
 	return (
 		<>
 			<HomeHeader />

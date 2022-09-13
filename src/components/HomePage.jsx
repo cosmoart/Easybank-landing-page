@@ -1,6 +1,6 @@
 export default function HomePage() {
 	return (
-		<main id="homePage" className="h-[80vh] min-h-[46rem] sm:max-h-[41rem] relative">
+		<main id="homePage" className="h-[80vh] min-h-[46rem] max-h-[70rem] sm:max-h-[41rem] relative">
 			<div className="overflow-hidden relative mx-auto max-w-6xl flex justify-center flex-col px-9 xl:px-[20px] text-center sm:text-left items-center sm:items-start h-full gap-[34px] sm:gap-0 pt-[17rem] sm:pt-[7.2rem] z-20">
 				<h1 className="text-title font-medium max-w-md tracking-[-3px] leading-[64px] mb-[16px]">Next generation digital banking</h1>
 				<p className="max-w-[25rem] leading-[30px] sm:mb-[37px]">

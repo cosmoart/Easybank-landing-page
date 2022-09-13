@@ -25,9 +25,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 -   [My process](#my-process)
     -   [Built with](#built-with)
     -   [What I learned](#what-i-learned)
-    -   [Useful resources](#useful-resources)
 -   [Author](#author)
--   [Acknowledgments](#acknowledgments)
 
 </details>
 
@@ -66,12 +64,10 @@ Users should be able to:
 ### Built with
 
 -   Semantic HTML5 markup
--   CSS custom properties
 -   Flexbox
--   CSS Grid
--   Mobile-first workflow
 -   [React](https://reactjs.org/) - JS library
--   [Styled Components](https://styled-components.com/) - For styles
+-   [Vite](https://vitejs.dev/) - Build Tool
+-   [Tailwindcss](https://tailwindcss.com/) - CSS framework
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -89,25 +85,12 @@ const proudOfThisFunc = () => {
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Useful resources
-
--   [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
--   [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ## Author
 
 -   Instagram - [@cosmo_art0](https://www.instagram.com/cosmo_art0/)
 -   Frontend Mentor - [@CosmoArt](https://www.frontendmentor.io/profile/cosmoart)
 -   Twitter - [@CosmoArt0](https://twitter.com/cosmoart0)
 -   My personal page - [https://cosmoart.github.io](https://cosmoart.github.io)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-## Acknowledgments
-
-<!-- Crédito a otras personas con quien trabaje o me inspire -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
