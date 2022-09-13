@@ -9,7 +9,7 @@
 
 # Easybank landing page
 
-This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN).
+A small landing page to practice Tailwind, React and responsive. This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN).
 
 [Solution][solution-url] . [Live Page][live-page]
 
@@ -73,15 +73,7 @@ Users should be able to:
 
 ### What I learned
 
-This challenge was a great learning opportunity, it was also very useful to reinforce previous knowledge, and face problems that had not been presented to me before.
-
-To see how you can add code snippets, see below:
-
-```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
-};
-```
+It was an excellent opportunity to reinforce my knowledge in React, tailwind and especially responsive.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -94,5 +86,5 @@ const proudOfThisFunc = () => {
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-[live-page]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[live-page]: https://eeasybank.vercel.app
 [solution-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
