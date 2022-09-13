@@ -18,7 +18,8 @@ module.exports = {
 				"PublicSans": ["Public Sans", "sans-serif"],
 			},
 			fontSize: {
-				"title": "clamp(37px,6vw ,60px)"
+				"title": "clamp(37px,6vw ,60px)",
+				"subtile": " clamp(30px,6vw,40px)"
 			},
 			transitionDelay: {
 				"0": "0ms",

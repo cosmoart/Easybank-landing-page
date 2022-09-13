@@ -29,7 +29,6 @@ function App() {
 			<HomeSections />
 			<HomeArticles />
 			<HomeFooter />
-			<img src="design/desktop-design.jpg" alt="bg" className='absolute top-0 left-0 opacity-50 z-50 hidden' />
 		</>
 	)
 }

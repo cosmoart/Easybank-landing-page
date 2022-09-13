@@ -12,18 +12,18 @@ const SECTIONS = [
 
 export default function HomeSections() {
 	return (
-		<article className="py-14 px-8 my-14 mx-auto max-w-6xl">
-			<h2 className="text-4xl mb-6 scrollAnimation">Why choose Easybank?</h2>
-			<p className="mb-6 text-lg max-w-2xl scrollAnimation">
+		<article className="py-12 px-9 xl:px-[20px] my-14 mx-auto max-w-6xl">
+			<h2 className="text-subtile mb-6 scrollAnimation -word-5">Why choose Easybank?</h2>
+			<p className="mb-6 sm:text-lg max-w-2xl scrollAnimation">
 				We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
 			</p>
-			<div className="flex flex-col sm:flex-row text-center sm:text-left gap-3 mt-[54px] flex-wrap justify-center items-center">
+			<div className="flex flex-col sm:flex-row text-center sm:text-left gap-3 mt-[54px] flex-wrap justify-center xl:justify-between items-center">
 				{
 					SECTIONS.map((sec, i) =>
-						<section key={i + 120} className={`${"scrollAnimation-" + i} bg-white rounded-lg p-4 scrollAnimation max-w-[22rem] lg:max-w-[16rem]`}>
+						<section key={i + 120} className={`${"scrollAnimation-" + i} bg-white rounded-lg scrollAnimation max-w-[22rem] lg:max-w-[16rem] px-3 py-8 sm:p-0`}>
 							<img src={sec[0]} alt="" className="mx-auto sm:mb-6 sm:mx-0" />
 							<div className="p-4">
-								<h3>{sec[1]}</h3>
+								<h3 className="text-2xl mb-4 sm:mb-0">{sec[1]}</h3>
 								<p>{sec[2]}</p>
 							</div>
 						</section>

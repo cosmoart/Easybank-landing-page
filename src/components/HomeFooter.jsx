@@ -8,13 +8,13 @@ import IconInstagram from "../assets/icons/social-media/icon-instagram.jsx"
 
 export default function HomeFooter() {
 	return (
-		<footer className=" bg-DarkBlue text-white p-8 text-center sm:text-left">
-			<div className="mx-auto max-w-6xl flex flex-col sm:flex-row justify-between ">
-				<div className="flex gap-6 sm:gap-16 flex-col sm:flex-row">
+		<footer className=" bg-DarkBlue text-white p-12 text-center sm:text-left">
+			<div className="mx-auto max-w-[70rem] flex flex-col sm:flex-row justify-between ">
+				<div className="flex gap-10 lg:gap-32 flex-col sm:flex-row">
 					<div className="flex flex-col justify-between items-center gap-4">
 						<img src={logoWhite} alt="" className="max-w-[10rem] sm:max-w-none" />
 						<nav>
-							<ul className="flex gap-4 sm:gap-2 flex-wrap justify-center">
+							<ul className="flex gap-3 sm:gap-4 flex-wrap justify-center">
 								<li><a href="https://www.facebook.com" title="Facebok" target="_blank" rel="noopener noreferrer">
 									<IconFacebook />
 								</a></li>
@@ -34,7 +34,7 @@ export default function HomeFooter() {
 						</nav>
 					</div>
 					<nav>
-						<ul className="grid xsm:grid-cols-2 gap-4">
+						<ul className="grid xsm:grid-cols-2 gap-4 lg:gap-x-24 mb-6 sm:mb-0">
 							<li><a className="hover:text-LimeGreen transition-colors" href="#">About Us</a></li>
 							<li><a className="hover:text-LimeGreen transition-colors" href="#">Contact</a></li>
 							<li><a className="hover:text-LimeGreen transition-colors" href="#">Blog</a></li>
@@ -44,8 +44,8 @@ export default function HomeFooter() {
 						</ul>
 					</nav>
 				</div>
-				<div className="flex flex-col my-4 sm:my-0 gap-2 sm:gap-0">
-					<button className="btn-primary">Request Invite</button>
+				<div className="flex flex-col my-4 sm:my-0 gap-2 sm:items-end">
+					<button className="btn-primary max-w-sm">Request Invite</button>
 					<small className="opacity-75">© Easybank. All Rights Reserved</small>
 					<small className="opacity-75">
 						Made with ♥️ by <a href="https://github.com/cosmoart" target="_blank" rel="noopener noreferrer" className="font-bold">Cosmo</a> -

@@ -7,6 +7,11 @@
 		@apply z-10 cursor-pointer rounded-full border-none bg-gradient-to-r from-LimeGreen to-BrightCyan px-[34px] py-[13px] text-sm font-bold text-white transition-transform hover:scale-[1.03] active:scale-[0.98];
 	}
 }
+@layer utilities {
+	.-word-5 {
+		word-spacing: -5px;
+	}
+}
 
 :root {
 	--DarkBlue: hsl(233, 26%, 24%);
@@ -71,8 +76,8 @@
 		background: url("assets/images/bg-intro-desktop.svg") no-repeat;
 		width: 90%;
 		height: 73rem;
-		right: -30rem;
-		top: -16.4rem;
+		right: -17rem;
+		top: -10rem;
 		background-size: contain;
 	}
 
@@ -80,12 +85,22 @@
 		height: 60rem;
 		width: 57%;
 		min-width: 24rem;
-		right: -11rem;
-		top: -8rem;
+		right: -7rem;
+		top: -3rem;
 		background-size: contain;
 		transform: none;
 		left: auto;
 		max-width: none;
+	}
+}
+@media (min-width: 1150px) {
+	#home-page-bg::after {
+		right: -30rem;
+		top: -11.4rem;
+	}
+
+	#homePage::after {
+		right: -11rem;
 	}
 }
 
