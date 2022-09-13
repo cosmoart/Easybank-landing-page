@@ -35,7 +35,7 @@ export default function HomeFooter() {
 					</div>
 					<nav>
 						<ul className="grid xsm:grid-cols-2 gap-4 lg:gap-x-24 mb-6 sm:mb-0">
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">About Us</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">About Us</a></li>
 							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Contact</a></li>
 							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Blog</a></li>
 							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Careers</a></li>

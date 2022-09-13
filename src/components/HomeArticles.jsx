@@ -17,12 +17,12 @@ export default function HomeArticles() {
 			<div className="flex flex-col sm:flex-row gap-6 sm:gap-4 flex-wrap justify-center">
 				{
 					ARTICLES.map((art, i) =>
-						<article key={i + 325} className={`${"scrollAnimation-" + i} bg-white transition-transform rounded-lg overflow-hidden cursor-pointer hover:!scale-105 mx-auto min-w-[14rem] max-w-[22rem] sm:max-w-[17rem] md:max-w-[20rem] lg:max-w-[16rem]`}>
+						<article key={i + 325} className={`${"scrollAnimation-" + i} bg-white transition-transform rounded-lg overflow-hidden cursor-pointer hover:!scale-105 mx-auto min-w-[14rem] max-w-[22rem] sm:max-w-[17rem] md:max-w-[20rem] lg:max-w-[16rem]`} id="homeArticles">
 							<img src={art[0]} alt="article" className="h-[52%] w-full object-cover" />
 							<div className="px-4 py-6">
-								<p className="text-sm">{art[1]}</p>
-								<h3>{art[2]}</h3>
-								<p className="text-sm">{art[3]}</p>
+								<p className="text-[13px] opacity-75">{art[1]}</p>
+								<h3 className="py-1 leading-5">{art[2]}</h3>
+								<p className="text-sm opacity-75">{art[3]}</p>
 							</div>
 						</article>
 					)

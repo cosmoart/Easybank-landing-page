@@ -4,7 +4,7 @@
 
 @layer components {
 	.btn-primary {
-		@apply z-10 cursor-pointer rounded-full border-none bg-gradient-to-r from-LimeGreen to-BrightCyan px-[34px] py-[13px] text-sm font-bold text-white transition-transform hover:scale-[1.03] active:scale-[0.98];
+		@apply z-10 cursor-pointer rounded-full border-none bg-gradient-to-r from-LimeGreen to-BrightCyan px-[34px] py-[13px] text-sm font-bold text-white transition-transform hover:scale-[1.03] hover:opacity-80 active:scale-[0.98];
 	}
 }
 @layer utilities {
@@ -60,7 +60,9 @@
 .homeLinks li:hover ~ #nav__underline {
 	bottom: -1rem;
 }
-
+#homeArticles:hover h3 {
+	color: var(--LimeGreen);
+}
 #nav__underline {
 	width: calc(100% / 5);
 	height: 3px;

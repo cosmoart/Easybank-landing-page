@@ -23,7 +23,7 @@ export default function HomeSections() {
 						<section key={i + 120} className={`${"scrollAnimation-" + i} bg-white rounded-lg scrollAnimation max-w-[22rem] lg:max-w-[16rem] px-3 py-8 sm:p-0`}>
 							<img src={sec[0]} alt="" className="mx-auto sm:mb-6 sm:mx-0" />
 							<div className="p-4">
-								<h3 className="text-2xl mb-4 sm:mb-0">{sec[1]}</h3>
+								<h3 className="text-2xl mb-4 sm:mb-0 py-2">{sec[1]}</h3>
 								<p>{sec[2]}</p>
 							</div>
 						</section>
