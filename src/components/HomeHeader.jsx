@@ -29,7 +29,7 @@ export default function HomeHeader() {
 
 	return (
 		<header id="home-header" className="bg-white sm:overflow-hidden fixed w-full transition-all z-50">
-			<div className="flex justify-between py-4 px-9 xl:px-[20px]  max-w-6xl mx-auto">
+			<div className="flex justify-between py-4 px-9 xl:px-[20px] max-w-6xl mx-auto shadow-sm">
 				<img src={logo} alt="logo" className="object-contain" />
 				<nav className={`transition-all w-[80%] sm:w-auto rounded-md p-3 sm:p-0 justify-center absolute z-10 bg-white flex sm:static left-1/2 -translate-x-1/2 sm:-translate-x-0 ${menu ? "top-20" : " -top-[18rem]"} ${isMobile && "shadow-sm"}`}>
 					<ul className={`homeLinks flex w-[clamp(18rem,47vw,23rem)] flex-col sm:flex-row items-center text-center ${isMobile && "gap-6"}`}>
