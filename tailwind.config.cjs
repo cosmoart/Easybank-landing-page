@@ -24,6 +24,9 @@ module.exports = {
 				"0": "0ms",
 				"400": "400ms",
 				"600": "600ms",
+			},
+			screens: {
+				"xsm": "370px"
 			}
 		},
 	},
