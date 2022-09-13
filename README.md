@@ -87,4 +87,4 @@ It was an excellent opportunity to reinforce my knowledge in React, tailwind and
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 [live-page]: https://eeasybank.vercel.app
-[solution-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[solution-url]: https://www.frontendmentor.io/solutions/easybank-landing-page-solution-5W8S6TSTtA
