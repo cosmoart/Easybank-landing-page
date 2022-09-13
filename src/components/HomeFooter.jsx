@@ -36,11 +36,11 @@ export default function HomeFooter() {
 					<nav>
 						<ul className="grid xsm:grid-cols-2 gap-4 lg:gap-x-24 mb-6 sm:mb-0">
 							<li><a className="hover:text-LimeGreen transition-colors" href="#">About Us</a></li>
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">Contact</a></li>
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">Blog</a></li>
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">Careers</a></li>
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">Support</a></li>
-							<li><a className="hover:text-LimeGreen transition-colors" href="#">Privacy Policy</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Contact</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Blog</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Careers</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Support</a></li>
+							<li><a className="hover:text-LimeGreen transition-colors inline-block hover:scale-105" href="#">Privacy Policy</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -48,7 +48,7 @@ export default function HomeFooter() {
 					<button className="btn-primary max-w-sm">Request Invite</button>
 					<small className="opacity-75">© Easybank. All Rights Reserved</small>
 					<small className="opacity-75">
-						Made with ♥️ by <a href="https://github.com/cosmoart" target="_blank" rel="noopener noreferrer" className="font-bold">Cosmo</a> - <a className="font-bold hover:scale-105" href="https://github.com/cosmoart/Easybank-landing-page" target="_blank" rel="noopener noreferrer">Repository<svg className="inline" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+						Made with ♥️ by <a href="https://github.com/cosmoart" target="_blank" rel="noopener noreferrer" className="font-bold inline-block hover:scale-105">Cosmo</a> - <a className="font-bold inline-block hover:scale-105" href="https://github.com/cosmoart/Easybank-landing-page" target="_blank" rel="noopener noreferrer">Repository<svg className="inline" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
 					</small>
 				</div>
 			</div>
