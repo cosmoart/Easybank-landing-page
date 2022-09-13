@@ -1,7 +1,7 @@
-import iconOnline from "../assets/icons/icon-online.svg"
-import iconBudgeting from "../assets/icons/icon-budgeting.svg"
-import iconOnboarding from "../assets/icons/icon-onboarding.svg"
-import iconApi from "../assets/icons/icon-api.svg"
+import iconOnline from "../assets/icons/home-sections/icon-online.svg"
+import iconBudgeting from "../assets/icons/home-sections/icon-budgeting.svg"
+import iconOnboarding from "../assets/icons/home-sections/icon-onboarding.svg"
+import iconApi from "../assets/icons/home-sections/icon-api.svg"
 
 const SECTIONS = [
 	[iconOnline, "Online Banking", "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."],
