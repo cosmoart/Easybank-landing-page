@@ -17,8 +17,8 @@ export default function HomeArticles() {
 			<div className="flex flex-col sm:flex-row gap-4 flex-wrap justify-center">
 				{
 					ARTICLES.map((art, i) =>
-						<figure key={i + 325} className="scrollAnimation bg-white transition-transform rounded-lg overflow-hidden cursor-pointer hover:scale-105 min-w-[14rem] max-w-[16rem]">
-							<img src={art[0]} alt="article" className="h-[45%] w-full" />
+						<figure key={i + 325} className={`${"scrollAnimation-" + i} bg-white transition-transform rounded-lg overflow-hidden cursor-pointer hover:!scale-105 mx-auto min-w-[14rem] max-w-[22rem] sm:max-w-[17rem] md:max-w-[20rem] lg:max-w-[16rem]`}>
+							<img src={art[0]} alt="article" className="h-[45%] w-full object-cover" />
 							<div className="px-4 py-6">
 								<p className="text-sm">{art[1]}</p>
 								<figcaption><h3>{art[2]}</h3></figcaption>

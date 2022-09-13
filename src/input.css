@@ -52,11 +52,15 @@
 	transform: translateX(-50%);
 }
 
+.homeLinks li:hover ~ #nav__underline {
+	bottom: -1rem;
+}
+
 #nav__underline {
 	width: calc(100% / 5);
 	height: 3px;
 	position: absolute;
-	bottom: -1rem;
+	bottom: -1.5rem;
 	left: 0;
 	background: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
 	transition: all 0.2s ease-in-out;

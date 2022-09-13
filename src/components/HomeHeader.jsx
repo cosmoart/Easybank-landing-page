@@ -6,15 +6,10 @@ import { useEffect, useState } from "react";
 export default function HomeHeader() {
 	const [menu, setMenu] = useState(false);
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
-	let timer;
 
 	useEffect(() => {
 		let underline = document.getElementById("nav__underline");
 		let prevScrollpos = window.pageYOffset;
-
-		window.addEventListener("resize", () => {
-			window.innerWidth < 640 ? setIsMobile(true) : setIsMobile(false)
-		})
 
 		document.addEventListener("scroll", () => {
 			let currentScrollPos = window.pageYOffset;
@@ -25,31 +20,26 @@ export default function HomeHeader() {
 
 		document.querySelectorAll(".nav__link").forEach((link, i) => {
 			link.addEventListener("mouseover", () => {
-				underline.style.bottom = `-1rem`;
-				underline.style.left = `${(100 / 5) * i}%`;
-				clearTimeout(timer);
+				underline.style.transform = `translateX(${i * 100}%)`;
 			});
+		});
 
-			link.addEventListener("mouseout", () => {
-				timer = setTimeout(() => underline.style.bottom = `-1.5rem`, 1200);
-			});
-		})
-
+		window.addEventListener("resize", () => window.innerWidth < 640 ? setIsMobile(true) : setIsMobile(false))
 	}, []);
 
 	return (
 		<header id="home-header" className="bg-white sm:overflow-hidden fixed w-full transition-all z-50">
-			<div className="flex justify-between p-4 max-w-6xl mx-auto">
+			<div className="flex justify-between py-4 px-[20px]  max-w-6xl mx-auto">
 				<img src={logo} alt="logo" className="object-contain" />
-				<nav className={`transition-all w-[80%] sm:w-auto rounded-md p-3 sm:p-0 justify-center absolute z-10 bg-white flex sm:static left-1/2 -translate-x-1/2 sm:-translate-x-0 ${menu ? "top-20" : " -top-56"}`}>
-					<ul className="homeLinks flex gap-6 flex-col sm:flex-row items-center">
+				<nav className={`transition-all w-[80%] sm:w-auto rounded-md p-3 sm:p-0 justify-center absolute z-10 bg-white flex sm:static left-1/2 -translate-x-1/2 sm:-translate-x-0 ${menu ? "top-20" : " -top-[18rem]"} ${isMobile && "shadow-sm"}`}>
+					<ul className={`homeLinks flex w-[clamp(18rem,47vw,23rem)] flex-col sm:flex-row items-center text-center ${isMobile && "gap-6"}`}>
 						<li className="sm:w-1/5"><a href="#" className="nav__link opacity-80 hover:opacity-100">Home</a></li>
 						<li className="sm:w-1/5"><a href="#" className="nav__link opacity-80 hover:opacity-100">About</a></li>
 						<li className="sm:w-1/5"><a href="#" className="nav__link opacity-80 hover:opacity-100">Contact</a></li>
 						<li className="sm:w-1/5"><a href="#" className="nav__link opacity-80 hover:opacity-100">Blog</a></li>
 						<li className="sm:w-1/5"><a href="#" className="nav__link opacity-80 hover:opacity-100">Careers</a></li>
+						{!isMobile && <div id="nav__underline" />}
 					</ul>
-					{!isMobile && <div id="nav__underline" />}
 				</nav>
 				{isMobile
 					? <button title={menu ? "Close menu" : "Drop menu"} className="w-[24px] h-[24px] flex items-center justify-center" onClick={() => setMenu(!menu)}>

@@ -19,6 +19,11 @@ module.exports = {
 			},
 			fontSize: {
 				"title": "clamp(37px,6vw ,60px)"
+			},
+			transitionDelay: {
+				"0": "0ms",
+				"400": "400ms",
+				"600": "600ms",
 			}
 		},
 	},

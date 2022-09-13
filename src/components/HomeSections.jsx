@@ -17,10 +17,10 @@ export default function HomeSections() {
 			<p className="mb-6 text-lg max-w-2xl scrollAnimation">
 				We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.
 			</p>
-			<div className="flex flex-col sm:flex-row text-center sm:text-left gap-3 mt-[54px]">
+			<div className="flex flex-col sm:flex-row text-center sm:text-left gap-3 mt-[54px] flex-wrap justify-center items-center">
 				{
 					SECTIONS.map((sec, i) =>
-						<section key={i + 120} className="bg-white rounded-lg p-4 scrollAnimation">
+						<section key={i + 120} className={`${"scrollAnimation-" + i} bg-white rounded-lg p-4 scrollAnimation max-w-[22rem] lg:max-w-[16rem]`}>
 							<img src={sec[0]} alt="" className="mx-auto sm:mb-6 sm:mx-0" />
 							<div className="p-4">
 								<h3>{sec[1]}</h3>
