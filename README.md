@@ -69,22 +69,22 @@ Users should be able to:
 -   [Vite](https://vitejs.dev/) - Build Tool
 -   [Tailwindcss](https://tailwindcss.com/) - CSS framework
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⬆️ Back to top</a></p>
 
 ### What I learned
 
 It was an excellent opportunity to reinforce my knowledge in React, tailwind and especially responsive.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⬆️ Back to top</a></p>
 
 ## Author
 
 -   Instagram - [@cosmo_art0](https://www.instagram.com/cosmo_art0/)
 -   Frontend Mentor - [@CosmoArt](https://www.frontendmentor.io/profile/cosmoart)
 -   Twitter - [@CosmoArt0](https://twitter.com/cosmoart0)
--   My personal page - [https://cosmoart.github.io](https://cosmoart.github.io)
+-   My website - [cosmoart.vercel.app](https://cosmoart.vercel.app)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⬆️ Back to top</a></p>
 
 [live-page]: https://eeasybank.vercel.app
 [solution-url]: https://www.frontendmentor.io/solutions/easybank-landing-page-solution-5W8S6TSTtA
